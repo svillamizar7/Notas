@@ -24,8 +24,8 @@ horas_estudio_input = st.selectbox("Horas de Estudio:", list(mapeo_horas_inverso
 asistencia_input = st.selectbox("Asistencia:", list(mapeo_asistencia_inverso.values()))
 
 # Mapear las entradas del usuario a los valores numéricos utilizados en el entrenamiento
-horas_estudio_encoded = [key for key, value in mapeo_horas_inverso.items() if value == horas_estudio_input][0]
-asistencia_encoded = [key for key, value in mapeo_asistencia_inverso.items() if value == asistencia_input][0]
+horas_estudio_encoded = [key for key, value in mapeo_horas_inverso.items() if value == horas_estudio_input][1]
+asistencia_encoded = [key for key, value in mapeo_asistencia_inverso.items() if value == asistencia_input][1]
 
 
 # Crear un DataFrame con la nueva observación (debe tener el mismo formato que X_train)
