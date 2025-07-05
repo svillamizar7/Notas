@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Cargar el modelo entrenado
-model = joblib.load('/naive_bayes_model.pkl')
+model = joblib.load('/content/naive_bayes_model.pkl')
 
 # Define los mapeos inversos para mostrar los resultados originales
 mapeo_horas_inverso = {1: 'Alta', 0: 'Baja'}
