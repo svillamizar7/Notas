@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Cargar el modelo entrenado
-model = joblib.load('/content/naive_bayes_model.pkl')
+model = joblib.load('./naive_bayes_model.pkl')
 
 # Define los mapeos inversos para decodificar los resultados
 mapeo_resultado_inverso = {1: 'Felicitaciones', 0: 'No Aprueba'}
